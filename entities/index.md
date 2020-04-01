@@ -14,7 +14,8 @@ Properties:
 Name | Type | Description
 --- | --- | ---
 Name | String | The item's name
-Category | [ItemCategory](#itemcategory) | The item's category
+Category | [`ItemCategory`](#itemcategory) | The item's category
+Properties | `0..*` [`ItemProperty`](#itemproperty) | Zero or more properties that pertain to the item. Inverse of `ItemProperty.Item`
 
 ### ItemCategory
 
@@ -24,4 +25,25 @@ Properties:
 Name | Type | Description
 --- | --- | ---
 Name | String | The category name
-Parent | [ItemCategory](#itemcategory) | The parent category of the current category
+Parent | [`ItemCategory`](#itemcategory) | The parent category of the current category
+
+### ItemCharacteristic
+
+Defines a certain characteristic that may be common to several items.
+
+Properties:
+Name | Type | Description
+--- | --- | ---
+Name | String | The characteristic's name
+UnitOfMeasure | String | The characteristic's UnitOfMeasure (optional)
+
+### ItemProperty
+
+The actual value of a item's characteristic.
+
+Properties:
+Name | Type | Description
+--- | --- | ---
+Item | [`Item`](#item) | The parent item. Inverse of `Item.Properties`
+Characteristic | [`ItemCharacteristic`](#itemcharacteristic) | The characteristic whose value is represented
+Value | String | The actual value
