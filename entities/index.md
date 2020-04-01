@@ -2,7 +2,25 @@
 
 These are the entities that are being used in the rest of the docs.
 
+## User-level Entities
+
+Users are the people that actually trade on this platform.
+
+### User
+
+Represents a person or institution that takes some part in the trading that goes on in this platform.
+Depending on the context they are in, users can be requesters, suppliers, investors or a combination of those roles. In different contexts, users can take on different roles.
+
+Requesters are those who are looking for goods or services, suppliers are those who have goods or services to offer, while investors are those who make sure that transactions are paid for in order for the actual trade to happen.
+
+Properties:
+Name | Type | Description
+--- | --- | ---
+Username | String | Any identifier is good for now
+
 ## Item-level Entities
+
+Items are the actual things that get traded - goods, services.
 
 ### Item
 
