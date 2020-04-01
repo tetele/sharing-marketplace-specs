@@ -8,5 +8,5 @@ In the context of the COVID-19 pandemic, we are trying to put together a platfor
 
 ## Content
 
-- [Functional requests](functional/index.md)
+- [Functional requirements](functional/index.md)
 - [Entities](entities/index.md)
